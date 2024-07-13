@@ -30,4 +30,4 @@ Currently, this folder is empty, but it is intended for developing and showcasin
 
 ---
 
-Feel free to explore the folders and their contents. Each project and notebook is documented to help understand the work and concepts involved. Happy learning!
+Feel free to explore the folders and their contents!!
