@@ -92,7 +92,10 @@ class Agent:
             move = random.randint(0, 2)
             final_move[move] = 1
         else: # otherwise we are getting a prediction from our model.
-            pass
+            state0 = torch.tensor(state, dtype=torch.float)
+            prediction = self.model.predict(state0)
+            move = torch.argmax(prediction).item() # this is returning the index of the largest value in an array, which is then converted to a real number using .items()
+            final_move[move] = 1
 
 def train():
     plot_scores = []
